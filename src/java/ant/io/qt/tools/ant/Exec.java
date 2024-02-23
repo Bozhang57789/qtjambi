@@ -58,7 +58,7 @@ class Exec {
     /**
      * Execute command command in directory dir.
      * @param command Command to be executed.
-     * @param dir Directory where command should be executed.
+     * @param directory Directory where command should be executed.
      * @throws BuildException Thrown if process exit value is not zero or IOException has been occurred.
      */
     public static void exec(Task task, String command, File directory, Project project) throws BuildException {
@@ -88,7 +88,7 @@ class Exec {
      *
      * Executes process in more verbose manner.
      * @param cmd Array of command and its arguments to be executed.
-     * @param dir Directory where should be executed.
+     * @param directory Directory where should be executed.
      * @param verbose Whether to be verbose.
      * @throws BuildException Thrown if process exit value is not zero or IOException has been occurred.
      */

@@ -93,7 +93,7 @@ public class CreateFunctionPointerQrcTask extends Task {
 //		System.out.println("Creating "+file.getAbsolutePath());
 		file.getParentFile().mkdirs();
 		try(FileOutputStream fos = new FileOutputStream(file);
-				PrintWriter stream = new PrintWriter(fos, false, StandardCharsets.UTF_8)){
+				PrintWriter stream = new PrintWriter(fos)){
 			stream.println("<RCC>");
 			stream.println("    <qresource prefix=\"/io/qt/qtjambi/functionpointers\">");
 //			stream.append("        <file alias=\"void(QObject*,QMetaObject::Call,int,void**)\">").append(String.format(libFormat, "StaticMetaCallFunction"));
